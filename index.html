@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+   
+    <title>Galerija</title>
+    <style>
+       body{width: 1268px;
+       margin: 10px;
+           font-family: sans-serif;}  
+  .row {display:flex;
+
+
+width: 90%;
+max-width: 930px;
+margin: 0 auto;
+}
+
+.row::after {
+content: "";
+display: flex;
+
+}
+h1{padding: 50px;}
+.column {
+
+    display: inline-block;
+width: 250px;
+box-sizing: border-box;
+padding: 50px;
+}
+.box {margin: 10px;
+height: 154px;
+width:144px ;
+background-color: rgba(232, 235, 238, 0.904);
+border-radius: 10px 10px 0px  0px;
+}
+  img{background: rgb(101, 131, 196);
+ width:144px;;
+  height: 134px;
+ border-radius: 10px 10px 0px  0px;
+}
+ p {text-align:center;
+
+  
+ }
+ #column-2{ width: auto;
+ height: 140px;
+ padding: 50px 0  0px 50px;}   
+    
+ @media screen and (max-width: 1024px) {
+.column {
+width: 33.33%;
+}
+}
+
+@media screen and (max-width: 768px) {
+.column {
+width: 50%;
+}
+}
+
+@media screen and (max-width: 414px) {
+.column {
+width: 100%;
+}
+} 
+#column-2{
+		max-width: 960px;
+		width: 90%;
+		margin: 0 auto;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+		grid-gap: 8px;
+	}
+@media screen and (max-width: 1024px) {
+#column-2 {
+width: 33.33%;
+}
+}
+
+@media screen and (max-width: 768px) {
+#column-2 {
+width: 50%;
+}
+}
+
+@media screen and (max-width: 414px) {
+#column-2 {
+width: 100%;
+}
+}  
+    
+    </style>
+</head>
+<body>
+    
+    <div id="row"><h1>Gallery Heading </h1>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"><p> Image Title</p> </div>
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"><p> Image Title</p></div>
+         </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title  </p></div>
+       </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p> Image Title</p> </div>
+       </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title</p> </div>
+
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title</p> </div>
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title</p> </div>
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title</p> </div>
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title </p></div>
+        </div>
+        <div class="column">
+        <div class="box"><img src="image.png" alt="Image Title"> <p>Image Title</p> </div>
+        </div>
+      
+        </div>
+
+</body>
+</html>
